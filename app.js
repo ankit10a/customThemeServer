@@ -32,6 +32,7 @@ app.use(
 
 
 app.use('/api', router);
+app.use('/', (req, res) => { res.status(200).send({ message: "Hello server" }) })
 
 
 app.use(function (req, res, next) {
